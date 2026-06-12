@@ -35,12 +35,7 @@ if ~exist(data_file, 'file')
 end
 ```
 2. data_TJSP.mat必须符合以下格式:
-GMsettings.Location_Tx : 基站初始位置 [N_bs x 3] (x,y,z)
-XY                     : 建筑物轮廓点 [N_points x 2] (x,y)
-building_start_index   : 每个建筑物在 XY 中的起始索引 [N_buildings x 1]
-building_end_index     : 每个建筑物在 XY 中的结束索引 [N_buildings x 1]
-num_of_buildings       : 建筑物数量
-main_walls             : 墙体三角形列表 [N_walls x 12] (4个角点，每个角点 x,y,z)
+
 可以直接修改summon.m中的参数来生成可用的文件:
 ### 1. 定义地图范围
 ```matlab
